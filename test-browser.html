@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Connection</title>
+</head>
+<body>
+    <h1>Test Page</h1>
+    <p>If you see this, the server is working.</p>
+    <script>
+        fetch('http://localhost:5173')
+            .then(r => r.text())
+            .then(html => console.log('Frontend accessible:', html.substring(0, 100)))
+            .catch(e => console.error('Frontend error:', e));
+        
+        fetch('http://localhost:5000')
+            .then(r => r.text())
+            .then(html => console.log('Backend accessible:', html.substring(0, 100)))
+            .catch(e => console.error('Backend error:', e));
+    </script>
+</body>
+</html>
