@@ -1,0 +1,16 @@
+export type Page =
+  | 'landing'
+  | 'login'
+  | 'signup'
+  | 'courses'
+  | 'tutor'
+  | 'contact'
+  | 'studentDashboard'
+  | 'tutorDashboard'
+  | 'coursedetails'
+  | 'courseManagement'
+  | 'tutorProfile'
+  | 'tutorSearch'
+  | 'virtualClassroom'
+  | 'emotionAnalytics'
+  | 'adminDashboard';
